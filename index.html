@@ -3,128 +3,331 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CV Oswel Manuel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="CV en ligne de Soh Oswel Manuel — Développeur web, étudiant en Licence 3 Informatique (parcours SIA) à l'Université de Douala.">
+  <title>CV — Soh Oswel Manuel | Développeur Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <div class="cv-container">
-    <div class="left-column">
+
+    <!-- ======================= Colonne latérale ======================= -->
+    <aside class="left-column">
+      <div class="cont-img">
+        <img src="https://portfolio-sohmanueloswel.netlify.app/images/oswel-cutout-800.webp"
+          onerror="this.onerror=null; this.src='images cv/profil.png';" alt="Photo de profil de Soh Oswel Manuel">
+      </div>
+
       <div class="profile">
-        <div class="cont-img">
-          <img src="images cv/profil.png" alt="mon profil">
-        </div>
         <h3>Profil</h3>
         <p>
-          Passionné par l'informatique, je suis constamment en quête d'expérience et de connaissances pour parfaire mon
-          expertise dans ce domaine. Mon objectif est de contribuer à l'innovation et au développement de technologies
-          de pointe dans le domaine de la recherche en informatique.
+          Étudiant en Licence 3 Informatique (parcours SIA) à l'Université de Douala, issu d'un parcours en mécanique
+          et en mécatronique. Je conçois des interfaces modernes, des applications web et des logiciels de gestion,
+          avec le souci de la qualité du code et de l'expérience utilisateur. Objectif : devenir ingénieur
+          développeur logiciel et mener mes propres projets dans le numérique.
         </p>
       </div>
+
       <div class="skills">
         <h3>Compétences</h3>
-        <h4>Langues</h4>
-        <p>Français (Courant)<br>Anglais (Moyen)</p>
-        <h4>Savoir-Être</h4>
-        <p>Travail d'équipe, Capacité d'adaptation, Écoute active, Empathie</p>
-        <h4>Savoir-Faire</h4>
-        <p>Word, Quelques connaissances de base en informatique</p>
-      </div>
-    </div>
 
+        <h4>Langages</h4>
+        <ul>
+          <li>HTML5 / CSS3 / JavaScript</li>
+          <li>Python, Java, SQL</li>
+          <li>Notions : C, C++, PHP</li>
+        </ul>
+
+        <h4>Frameworks &amp; bibliothèques</h4>
+        <ul>
+          <li>Django / Django REST Framework</li>
+          <li>Flask, Bootstrap</li>
+        </ul>
+
+        <h4>Bases de données</h4>
+        <ul>
+          <li>MySQL, SQLite</li>
+        </ul>
+
+        <h4>Outils &amp; environnement</h4>
+        <ul>
+          <li>Git / GitHub</li>
+          <li>Linux (CachyOS), Terminal</li>
+          <li>VS Code, API REST</li>
+        </ul>
+
+        <h4>Bureautique</h4>
+        <ul>
+          <li>Microsoft Word</li>
+        </ul>
+
+        <h4>Langues</h4>
+        <ul>
+          <li>Français <span class="level">(courant)</span></li>
+          <li>Anglais <span class="level">(intermédiaire)</span></li>
+        </ul>
+      </div>
+
+      <div class="soft-skills">
+        <h3>Savoir-être</h3>
+        <ul>
+          <li>Rigueur et sens du détail</li>
+          <li>Travail d'équipe</li>
+          <li>Capacité d'adaptation</li>
+          <li>Écoute active</li>
+          <li>Autonomie</li>
+        </ul>
+      </div>
+
+      <div class="interests">
+        <h3>Centres d'intérêt</h3>
+        <ul>
+          <li>Intelligence artificielle</li>
+          <li>Veille technologique</li>
+          <li>Entrepreneuriat numérique</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- ========================= Contenu principal ========================= -->
     <div class="right-column">
       <header>
         <h1>Soh <span>Oswel Manuel</span></h1>
-        <p class="subtitle">Recherche plus d'expérience et de connaissances en informatique</p>
+        <p class="subtitle">Développeur web · Étudiant en Licence 3 Informatique (SIA)</p>
         <div class="contact">
-          <span>+237675455087</span> |
-          <span><a href="sohmanueloswel237@gmail.com">sohmanueloswel237@gmail.com</a></span> |
-          <span>Douala / Cameroun</span>
+          <span class="contact-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.5 2.9 3.7 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+            <a href="tel:+237675455087">+237 675 455 087</a> ·
+            <a href="tel:+237686587039">+237 686 587 039</a>
+          </span>
+          <a href="mailto:sohmanueloswel237@gmail.com" class="contact-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            sohmanueloswel237@gmail.com
+          </a>
+          <span class="contact-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            Douala, Cameroun
+          </span>
+          <a href="https://portfolio-sohmanueloswel.netlify.app/" target="_blank" rel="noopener"
+            class="contact-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.27 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+            portfolio-sohmanueloswel.netlify.app
+          </a>
+          <a href="https://github.com/oswel-offiiel" target="_blank" rel="noopener" class="contact-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+            github.com/oswel-offiiel
+          </a>
         </div>
       </header>
 
-      <section class="experience">
-        <h3>Expérience Professionnelle</h3>
-        <p><strong>Stagiaire</strong> | Self Meca Auto, Douala <span class="date">07-2023 - 09-2023</span></p>
-        <p>Ce stage m’a permis de mettre en application les connaissances théoriques acquises et d’acquérir plus
-          d’expérience sur le terrain.</p>
+      <section class="cv-section experience">
+        <h3>Expérience professionnelle</h3>
+
+        <div class="entry">
+          <div class="entry-head">
+            <p class="entry-title"><strong>Développeur web</strong> — Projets personnels &amp; académiques, Douala</p>
+            <span class="date">2024 – aujourd'hui</span>
+          </div>
+          <ul>
+            <li>Conception et développement de sites vitrines et d'applications web (e-commerce, éducation, gestion)</li>
+            <li>Création d'outils complets : générateur de CV en ligne, plateforme d'apprentissage, logiciels de
+              gestion</li>
+            <li>Travail avec HTML, CSS, JavaScript, Python (Django, Flask), Java et bases de données MySQL / SQLite</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <p class="entry-title"><strong>Stagiaire</strong> — Self Meca Auto, Douala</p>
+            <span class="date">07/2023 – 09/2023</span>
+          </div>
+          <p>Ce stage m'a permis de mettre en application les connaissances théoriques acquises et d'acquérir
+            plus d'expérience sur le terrain.</p>
+        </div>
       </section>
 
-      <section class="education">
+      <section class="cv-section education">
         <h3>Formation</h3>
-        <p><strong>Mécatronique Automobile</strong> | Centre De Formation Multitechnique, Douala <span
-            class="date">10-2022 - 11-2023</span></p>
-        <ul>
-          <li>Fonctionnement des systèmes électroniques intégrés</li>
-          <li>Résolution des problèmes mécaniques et électriques</li>
-          <li>Utilisation d’outils de diagnostic automobile</li>
-          <li>Optimisation des performances du véhicule</li>
-        </ul>
+
+        <div class="entry">
+          <div class="entry-head">
+            <p class="entry-title"><strong>Licence Informatique — parcours SIA</strong>, Université de Douala</p>
+            <span class="date">2023 – aujourd'hui</span>
+          </div>
+          <ul>
+            <li>Systèmes Informatiques et Applications : développement logiciel, bases de données, API</li>
+            <li>Réorientation après un parcours en mécanique et en mécatronique</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <p class="entry-title"><strong>Mécatronique Automobile</strong> — Centre de Formation Multitechnique,
+              Douala</p>
+            <span class="date">10/2022 – 11/2023</span>
+          </div>
+          <ul>
+            <li>Fonctionnement des systèmes électroniques intégrés</li>
+            <li>Résolution des problèmes mécaniques et électriques</li>
+            <li>Utilisation d'outils de diagnostic automobile</li>
+            <li>Optimisation des performances du véhicule</li>
+          </ul>
+        </div>
       </section>
-      <section class="education">
+
+      <section class="cv-section education">
         <h3>Parcours secondaire</h3>
-        <p><strong>Maintenance des véhicule de tourisme</strong> | lycée technique, Kekem <span class="date">2015 -
-            2022</span></p>
-        <ul>
-          <li>CAP: Certificat d'aptitude Professionnelle <span class="date">2019</span></li>
-          <li>Probatoire CMA (Construction et Maintenance Automobile) <span class="date">
-              2021</span></li>
-          <li>BAC CMA (Construction et Maintenance Automobile) <span class="date">
-              2022</span></li>
-        </ul>
+        <div class="entry">
+          <div class="entry-head">
+            <p class="entry-title"><strong>Maintenance des véhicules de tourisme</strong> — Lycée technique, Kekem</p>
+            <span class="date">2015 – 2022</span>
+          </div>
+          <ul class="diplomas">
+            <li>BAC CMA (Construction et Maintenance Automobile) <span class="date">2022</span></li>
+            <li>Probatoire CMA (Construction et Maintenance Automobile) <span class="date">2021</span></li>
+            <li>CAP — Certificat d'Aptitude Professionnelle <span class="date">2019</span></li>
+          </ul>
+        </div>
       </section>
     </div>
   </div>
-  <section class="portfolio">
-    <h1>portfolio</h1>
-    <main>
-      <h2 class="gallery-title">mes different projet</h2>
 
-      <div class="grid-container">
-        <div class="grid-item">
-          <img src="images cv/ephec 1.png" alt="ephec">
-          <div class="caption">ephec 1</div>
+  <!-- ============================ Projets ============================ -->
+  <section class="portfolio">
+    <header class="portfolio-head">
+      <h2>Projets</h2>
+      <p class="portfolio-subtitle">Une sélection de mes réalisations web &amp; logicielles</p>
+    </header>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <img class="project-img" src="https://portfolio-sohmanueloswel.netlify.app/images/cvmaker.jpg"
+          alt="Aperçu d'OSWEL CV Maker" loading="lazy">
+        <div class="project-body">
+          <h4>OSWEL CV Maker</h4>
+          <p>Générateur de CV en ligne : créez, personnalisez et téléchargez un CV professionnel au format PDF,
+            gratuitement, avec aperçu en temps réel.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a class="project-link" href="https://oswel-cv-maker.vercel.app/" target="_blank" rel="noopener">Voir le
+            projet ↗</a>
         </div>
-        <div class="grid-item">
-          <img src="images cv/ephec 2.png" alt="ephec 2">
-          <div class="caption">ephec 2</div>
+      </article>
+
+      <article class="project-card">
+        <img class="project-img" src="https://portfolio-sohmanueloswel.netlify.app/images/oswel-learn.jpg"
+          alt="Icône de l'application OSWEL Learn" loading="lazy">
+        <div class="project-body">
+          <h4>OSWEL Learn</h4>
+          <p>Plateforme personnelle de gestion d'apprentissage : matières et connaissances, commandes et erreurs,
+            révisions et rappels. Installable comme une application (PWA).</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PWA</span></div>
+          <a class="project-link" href="https://oswel-learn-v2-eta.vercel.app/" target="_blank" rel="noopener">Voir le
+            projet ↗</a>
         </div>
-        <div class="grid-item">
-          <img src="images cv/ephec.png" alt="Image 3">
-          <div class="caption">ephec</div>
+      </article>
+
+      <article class="project-card">
+        <img class="project-img" src="https://portfolio-sohmanueloswel.netlify.app/images/luxury.jpg"
+          alt="Aperçu du site Luxury Jewels" loading="lazy">
+        <div class="project-body">
+          <h4>Luxury Jewels</h4>
+          <p>Site e-commerce vitrine autour des bijoux de luxe, avec une expérience visuelle élégante et une
+            identité noire, dorée et raffinée.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Stockage local</span></div>
+          <a class="project-link" href="https://luxury-jewels.netlify.app/" target="_blank" rel="noopener">Voir le
+            projet ↗</a>
         </div>
-        <div class="grid-item">
-          <img src="images cv/fiche d'enregistrement.png" alt="fiche">
-          <div class="caption">fiche de 182</div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-body">
+          <h4>AfriGold Mining</h4>
+          <p>Site vitrine professionnel pour une entreprise spécialisée dans la vente d'or et de diamants — site
+            statique pensé pour une présentation internationale.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a class="project-link" href="https://afrigoldmining.com/" target="_blank" rel="noopener">Voir le projet
+            ↗</a>
         </div>
-        <div class="grid-item">
-          <img src="images cv/forme I.png" alt="ephec">
-          <div class="caption">formulaire</div>
+      </article>
+
+      <article class="project-card">
+        <img class="project-img" src="https://portfolio-sohmanueloswel.netlify.app/images/examenbox.jpg"
+          alt="Aperçu du projet Examen Box" loading="lazy">
+        <div class="project-body">
+          <h4>Examen Box</h4>
+          <p>Plateforme où les étudiants peuvent accéder à d'anciens sujets d'examen et à leurs corrigés.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Stockage local</span></div>
+          <a class="project-link" href="https://exembox.netlify.app/" target="_blank" rel="noopener">Voir le projet
+            ↗</a>
         </div>
-        <div class="grid-item">
-          <img src="images cv/form II.png" alt="ephec 2">
-          <div class="caption">formulaire</div>
+      </article>
+
+      <article class="project-card">
+        <img class="project-img" src="https://portfolio-sohmanueloswel.netlify.app/images/codequizpro.jpg"
+          alt="Aperçu du projet Code Quiz Pro" loading="lazy">
+        <div class="project-body">
+          <h4>Code Quiz Pro</h4>
+          <p>Plateforme de QCM à plusieurs niveaux de difficulté pour tester son niveau dans différents langages de
+            programmation.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Stockage local</span></div>
+          <a class="project-link" href="https://code-quiz-pro.netlify.app/" target="_blank" rel="noopener">Voir le
+            projet ↗</a>
         </div>
-        <div class="grid-item">
-          <img src="images cv/forme MD.png" alt="Image 3">
-          <div class="caption">formulaire</div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-body">
+          <h4>RevisePro <em class="badge">En cours</em></h4>
+          <p>Application de révision pour étudiants : QCM chronométrés, suivi de progression, classement,
+            administration et import de PDF.</p>
+          <div class="tags"><span>Flask</span><span>Python</span><span>MySQL</span><span>Bootstrap</span><span>JWT</span><span>API
+              REST</span></div>
         </div>
-        <div class="grid-item">
-          <img src="images cv/projet.png" alt="fiche">
-          <div class="caption">projet</div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-body">
+          <h4>GestionnaireVente <em class="badge">En cours</em></h4>
+          <p>Application de bureau en Java Swing pour la gestion des ventes et des produits, pensée notamment pour une
+            activité de vente de pièces automobiles.</p>
+          <div class="tags"><span>Java</span><span>Java Swing</span></div>
         </div>
-        <div class="grid-item">
-          <img src="images cv/rattrapage labo.png" alt="Image 3">
-          <div class="caption">formulaire</div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-body">
+          <h4>CachyOS Command Hub <em class="badge">En cours</em></h4>
+          <p>Projet Django orienté apprentissage, pour la gestion de commandes et d'outils Linux.</p>
+          <div class="tags"><span>Python</span><span>Django</span><span>DRF</span><span>SQLite</span><span>API
+              REST</span></div>
         </div>
-        <div class="grid-item">
-          <img src="images cv/projet.png" alt="fiche">
-          <div class="caption">fiche de 182</div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-body">
+          <h4>OSWEL Stock <em class="badge">En cours</em></h4>
+          <p>Application pensée pour aider les commerçants à mieux gérer leur boutique : suivi des stocks, des
+            produits et des ventes.</p>
+          <div class="tags"><span>Gestion de stock</span><span>Pack OSWEL</span></div>
         </div>
-        <!-- Ajoute d'autres images ici -->
-      </div>
-    </main>
+      </article>
+
+    </div>
+
+    <p class="portfolio-more">
+      Pour découvrir l'ensemble de mes projets, visitez
+      <a href="https://portfolio-sohmanueloswel.netlify.app/" target="_blank"
+        rel="noopener">portfolio-sohmanueloswel.netlify.app</a>
+    </p>
   </section>
 
 </body>
